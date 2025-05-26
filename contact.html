@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - CarLux</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <h1>CarLux</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Cars</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" name="name" required />
+        <input type="email" placeholder="Your Email" name="email" required />
+        <textarea placeholder="Your Message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 CarLux. All rights reserved.</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you! Your message has been sent.");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

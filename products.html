@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - CarLux</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>CarLux</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Cars</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="controls">
+      <select id="brandFilter">
+        <option value="">All Brands</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Lexus">Lexus</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Land Rover">Land Rover</option>
+      </select>
+
+      <select id="sortPrice">
+        <option value="">Sort by Price</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+    </div>
+
+    <section class="product-list">
+      <h2>Our Collection</h2>
+      <div class="car-grid" id="productContainer"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 CarLux. All rights reserved.</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

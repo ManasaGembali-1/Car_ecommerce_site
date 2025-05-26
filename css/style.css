@@ -1,0 +1,226 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  color: #0f0e0e;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Featured Cars */
+.featured {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.car-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.car-card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 40px;
+}
+.cart-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: start;
+}
+
+.cart-item img {
+  border-radius: 8px;
+}
+
+.cart-item div {
+  text-align: left;
+}
+
+.cart-item button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ff4444;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-section .btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.order-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.order-section .btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+button:hover,
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:focus,
+a:focus {
+  outline: 2px dashed #555;
+  outline-offset: 2px;
+}
+
+.contact-section {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .car-grid,
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.controls select {
+  padding: 10px;
+  font-size: 16px;
+}

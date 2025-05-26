@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CarLux - Luxury Car Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    body {
+      background: url("assets/bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <header class="navbar">
+      <h1>CarLux</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Cars</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Welcome to CarLux</h2>
+      <p>Your ultimate destination for luxury cars</p>
+      <button onclick="location.href='products.html'" class="btn">
+        Shop Now
+      </button>
+    </section>
+    <section class="featured" aria-label="Featured Cars">
+      <h2>Our Most Popular Car Models</h2>
+      <div class="car-grid">
+        <div class="car-card">
+          <img src="assets/car1.jpg" alt="Luxury Car 1" />
+          <h3>BMW X7</h3>
+          <p>$75,000</p>
+        </div>
+        <div class="car-card">
+          <img src="assets/car2.jpg" alt="Luxury Car 2" />
+          <h3>Audi Q8</h3>
+          <p>$85,000</p>
+        </div>
+        <div class="car-card">
+          <img src="assets/car3.jpg" alt="Luxury Car 3" />
+          <h3>Mercedes GLE</h3>
+          <p>$95,000</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 CarLux. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
